@@ -1,6 +1,7 @@
 const projectData = {};
 
 var path = require('path');
+const test = require('./serverTest');
 const express = require('express');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
@@ -27,6 +28,10 @@ const pixKey = process.env.pixBayKey;
 app.get('/', function (req, res) {
   res.sendFile(path.resolve('dist/index.html'))
 })
+
+app.get('/test', function (req, res) {
+  res.send(test);
+}); 
 
 app.get('/all', function(req, res){
   res.send(projectData);
