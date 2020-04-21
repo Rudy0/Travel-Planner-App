@@ -1,0 +1,38 @@
+$font-stack: Courier, Helvetica, sans-serif;
+$primary-color: #defcff;
+$secondary-color:  #ebeff0;
+$base-color: #fdfdfd;
+
+body {
+    font-family: $font-stack;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $base-color;
+
+    header{
+        margin: 2em auto;
+        h1{
+            font-size: 3em;
+            align-self: left;
+        }
+        p{
+            align-self: left;
+            max-width: 700px;
+        }
+    }
+}
+
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}

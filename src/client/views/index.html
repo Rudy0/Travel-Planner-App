@@ -9,30 +9,38 @@
         
         <header>
             <div class="">
-                Travel PlannerApp
+               <h1>Travel PlannerApp</h1> 
             </div>
             <div>
+               <p>Travel app that obtains a desired trip location & date from the user, and displays weather and an image of the location using information obtained from external APIs.</p>  
             </div>
         </header>
 
         <main>
             <section>
+                <h2>Insert your travel info:</h2>
                 <div id="error"></div>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="city" type="text" name="city" value=""  placeholder="City Destination">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <div class="container"> 
+                        <label for="city">City:</label>
+                        <input id="city" type="text" name="city" value=""  placeholder="City Destination">
+                        <label for="start-trip">Departing Date:</label>
+                        <input id="dateStart" type="date" name="start-trip">
+                        <label for="end-trip">Returning Date:</label>
+                        <input id="dateEnd" type="date" name="end-trip">
+                    </div>
+                    <input id="button" type="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
                 <strong>Results:</strong>
                 <div id="results"></div>
-                <div id="results-text"></div>
             </section>
         </main>
 
         <footer>
-            
+            <h3>TravelApp  By Rudolf</h3>
         </footer>
         <script>
             // Check that service workers are supported

@@ -1,0 +1,35 @@
+$font-stack: Courier, Helvetica, sans-serif;
+$primary-color: #defcff;
+$secondary-color:  #ebeff0;
+
+
+.card{
+    background-color: $primary-color;
+    border: 2px solid #000;
+    border-radius: 2em;
+    width: 80vw;
+    margin: 1em;
+    
+    &:hover{
+        background-color: $secondary-color;
+    }
+    img{
+        display: block;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        width: 100%;
+        
+    }
+    .container{
+        padding: 1em;
+    }
+}
+
+@media (min-width:980px) {
+    .card{
+        width:40vw;
+    }
+}
