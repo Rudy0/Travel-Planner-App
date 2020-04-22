@@ -14,7 +14,7 @@ To successful use the app you shold:
         weatherApiKey = YOUR_API_KEY --> for WeatherBit API
         pixBayKey = YOUR_API_KEY     --> for Pixbay API
 
-    3.Run npm run build-prod and npm run start 
+    3.npm run build-prod and npm run start 
     4.Use your favorite browser to locate the server on: localhost:3030 
     5.Have fun!
 
