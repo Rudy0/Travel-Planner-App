@@ -30,3 +30,14 @@ form{
         }
     }
 }
+
+@media (max-width: 999px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            margin: 0.5em;
+        }
+    }
+}

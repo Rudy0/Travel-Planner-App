@@ -56,8 +56,18 @@ app.post('/city', function (req, res) {
   let lat = projectData.latitude;
   let lon = projectData.longitude;
   let t0 = projectData.startDate;
-  let t1 = projectData.endDate;
-  const apiUrl = `${weatherUrl}${lat}&lon=${lon}&start_date=${t0}&end_date=${t1}${weatherApiKey}`;
+  let start = new Date(t0);
+  start.setFullYear(start.getFullYear()-1);
+  start = start.toISOString();
+  start = start.split("T")[0];
+  let t1 = projectData.startDate;
+  let end = new Date(t1);
+  end.setFullYear(end.getFullYear()-1);
+  end.setDate(end.getDate()+1);
+  end = end.toISOString();
+  end = end.split("T")[0];
+  
+  const apiUrl = `${weatherUrl}${lat}&lon=${lon}&start_date=${start}&end_date=${end}${weatherApiKey}`;
   const response = await fetch(apiUrl);
     try {
       const data = await response.json();
@@ -65,7 +75,7 @@ app.post('/city', function (req, res) {
       console.log(data);
   } catch(error) {
       console.log('error', error);
-      }
+    }
 });
 
 // Img API call 

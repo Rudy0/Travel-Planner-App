@@ -9,3 +9,7 @@ import "./styles/travelCard.scss";
 export {
     handleSubmit
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById("button").addEventListener('click', handleSubmit);
+});
