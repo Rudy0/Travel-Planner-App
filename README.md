@@ -6,7 +6,7 @@ Travel app that obtains a desired trip location & date from the user, and displa
 
 ##Initialization 
 
-To successful use the app you shold:
+To successful use the app you should:
 
     1. Clone or download this repo.
     2. Create a file .env and inside it add the keys to WeatherBit API and PixbayAPI  like this:
