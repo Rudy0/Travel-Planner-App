@@ -1,10 +1,10 @@
 $font-stack: Courier, Helvetica, sans-serif;
-$primary-color: #defcff;
-$secondary-color:  #ebeff0;
+$primary-color: linear-gradient(#cbe7f7, #a2d1e9);
+$secondary-color: radial-gradient(#95d4f5, #94d2f1, #67c5f5);
 
 
 .card{
-    background-color: $primary-color;
+    background-image: $primary-color;
     border: 2px solid #000;
     border-radius: 2em;
     width: 80vw;
@@ -12,7 +12,7 @@ $secondary-color:  #ebeff0;
     align-self: center;
     
     &:hover{
-        background-color: $secondary-color;
+        background-image: $secondary-color;
     }
     img{
         display: block;

@@ -1,6 +1,6 @@
 $font-stack: Courier, Helvetica, sans-serif;
-$primary-color: #defcff;
-$secondary-color:  #ebeff0;
+$primary-color: radial-gradient(#f5f7f7, #e8eaeb, #82d2fa);
+$secondary-color: radial-gradient(#f5f7f7, #94d2f1, #67c5f5);
 
 main{
     display: flex;
@@ -8,6 +8,10 @@ main{
     align-items: center;
     margin: 2em auto;
     width: 80vw;
+}
+
+#results{
+    margin: 10px auto;
 }
 
 form{
@@ -20,13 +24,14 @@ form{
         margin: 2em;
         width: 8em;
         height: 3em;
-        background-color: $primary-color;
+        background-image: $primary-color;
         border: 1px solid #000;
         border-radius: 30%;
         font-weight: bolder;
         &:hover{
-            background-color: $secondary-color;
+            background-image: $secondary-color;
             color: #fff;
+            text-shadow: 2px 2px #000;
         }
     }
 }
